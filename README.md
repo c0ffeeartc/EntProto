@@ -8,9 +8,16 @@ Entitas-CSharp "blueprints", depends on OdinInspector
   - Sirenix.Odin 1.0.6.0 [asset store](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
 
 ### Installation
-1. Copy EntProto folder into your Assets folder
-2. Remove EntProto/Examples unless needed.
+For use in your own project:
+1. Ensure Entitas and other dependencies are installed
+1. Copy EntProto folder into Assets
+2. Remove EntProto/Examples folder
 3. Done
+
+For testing examples:
+1. Install dependencies
+1. Copy EntProto folder into Assets
+2. Done
 
 If you don't have Odin plugin it's possible to use other plugin that serializes List\<IComponent\> by changing few lines of code. [FullInspector](https://github.com/jacobdufault/fullinspector) has Free license GPLv3 for example.
 
