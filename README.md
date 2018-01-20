@@ -25,8 +25,9 @@ If you don't have Odin plugin it's possible to use other plugin that serializes 
 
 ### Usage
 1. Inherit EnityProto
-2. Inherit BaseProtoHolder, expose [SerializeField] with your entity prototypes, fill them in editor, pass them into Prototypes in Awake
-3. Call BaseProtoHolder Clone and ApplyTo methods at runtime
+1. Inherit BaseProtoHolder, expose [SerializeField] with your entity prototypes, fill them in editor, pass them into Prototypes in Awake
+1. Place inherited ProtoHolder script on top of Unity's Edit->ProjectSettings->ScriptExecutionOrder
+1. Call BaseProtoHolder Clone and ApplyTo methods at runtime
 
 These steps can be seen in Example scripts [GameProtoHolder.cs](/Assets/EntProto/Examples/Scripts/GameProtoHolder.cs), [GameController.cs](/Assets/EntProto/Examples/Scripts/GameController.cs)
 
