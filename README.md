@@ -15,9 +15,11 @@ For use in your own project:
 3. Done
 
 For testing examples:
+1. Create new Unity project
 1. Install dependencies
+1. Copy Preferences.properties into root of project
 1. Copy EntProto folder into Assets
-2. Done
+1. Open and run example scene
 
 If you don't have Odin plugin it's possible to use other plugin that serializes List\<IComponent\> by changing few lines of code. [FullInspector](https://github.com/jacobdufault/fullinspector) has Free license GPLv3 for example.
 
