@@ -7,6 +7,9 @@
 /Assets/Entitas/*
 /Assets/Entitas.meta
 
+/Assets/Plugins/*
+/Assets/Plugins.meta
+
 /Assets/Plugins/Sirenix/*
 /Assets/Plugins/Sirenix.meta
 
