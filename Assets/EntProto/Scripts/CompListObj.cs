@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace EntProto
 {
-	[CreateAssetMenu( menuName = "Custom/Comp List", fileName = "CompList" )]
+	[CreateAssetMenu( menuName = "EntProto/Comp List", fileName = "CompList" )]
 	public class CompListObj : SerializedScriptableObject
 	{
 		[SerializeField]
