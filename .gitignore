@@ -4,6 +4,9 @@
 !/ProjectSettings/
 !/*.properties
 
+/Assets/Entitas/*
+/Assets/Entitas.meta
+
 /Assets/Plugins/Sirenix/*
 /Assets/Plugins/Sirenix.meta
 
