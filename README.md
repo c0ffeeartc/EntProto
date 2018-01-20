@@ -28,7 +28,7 @@ If you don't have Odin plugin it's possible to use other plugin that serializes 
 2. Inherit BaseProtoHolder, expose [SerializeField] with your entity prototypes, fill them in editor, pass them into Prototypes in Awake
 3. Call BaseProtoHolder Clone and ApplyTo methods at runtime
 
-These steps can be seen in Example scripts
+These steps can be seen in Example scripts [GameProtoHolder.cs](/Assets/EntProto/Examples/Scripts/GameProtoHolder.cs), [GameController.cs](/Assets/EntProto/Examples/Scripts/GameController.cs)
 
 ### Main concepts (theory)
   - List\<IComponent\> allows creating entity
