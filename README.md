@@ -1,0 +1,35 @@
+# EntProto
+Entitas-CSharp "blueprints", depends on OdinInspector
+
+---
+
+### Depends on and tested with
+  - Entitas 0.47.9 [releases](https://github.com/sschmid/Entitas-CSharp/releases)
+  - Sirenix.Odin 1.0.6.0 [asset store](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
+
+### Installation
+1. Copy EntProto folder into your Assets folder
+2. Remove EntProto/Examples unless needed.
+3. Done
+
+If you don't have Odin plugin it's possible to use other plugin that serializes List\<IComponent\> by changing few lines of code. [FullInspector](https://github.com/jacobdufault/fullinspector) has Free license GPLv3 for example.
+
+### Usage
+1. Inherit EnityProto
+2. Inherit BaseProtoHolder, expose [SerializeField] with your entity prototypes, fill them in editor, pass them into Prototypes in Awake
+3. Call BaseProtoHolder Clone and ApplyTo methods at runtime
+
+These steps can be seen in Example scripts
+
+### Main concepts (theory)
+  - List\<IComponent\> allows creating entity
+  - It's possible to change entity completely by removing some components and adding other components, that's why there are Remove, Self and Shared fields
+  - If Remove, Self and Shared fields have duplicates only top ones are processed other are skipped.
+
+### Reasons to not use prototypes aka blueprints
+  - __Serialization__. Plugins improve Unity's serialization, but even if all works well at current platform, no guarantee for others. It's like drugs, first feels great, then gives problems, later it's painful and hard to get off
+  - __Refactoring__. After renaming component class, "blueprints" will lose these comoponents silently
+  - __Version Control__. Creating entities through code usually is better version controlled than "blueprint" assets
+  - __Cloning__. Unlike simple create functions, this method clones fields, which requires implementing IAfterCopy for any object that is non plain old data
+
+Good usage of blueprints might be experimenting and prototyping with further transition into code.
