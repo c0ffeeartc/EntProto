@@ -4,6 +4,7 @@ Entitas-CSharp "blueprints", depends on OdinInspector
 ---
 
 ### Depends on and tested with
+  - Unity3d 2017.1.2f1
   - Entitas 0.47.9 [releases](https://github.com/sschmid/Entitas-CSharp/releases)
   - Sirenix.Odin 1.0.6.0 [asset store](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
 
