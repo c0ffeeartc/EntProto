@@ -1,5 +1,5 @@
 ﻿//-------------------------------------------------
-// Copyright (C) 0000-2017, Yegor c0ffee
+// Copyright (C) 0000-2018, Yegor c0ffee
 // Email: c0ffeeartc@gmail.com
 //-------------------------------------------------
 
@@ -9,10 +9,10 @@ using Entitas;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Custom.Scripts
+namespace EntProto
 {
 	public abstract class BaseProtoHolder <TProto, TEntity, TContext>
-		: SerializedBehaviour
+		: SerializedMonoBehaviour
 			where TProto : EntityProto<TEntity, TContext>
 			where TEntity : Entity
 			where TContext : Context<TEntity>, new (  )

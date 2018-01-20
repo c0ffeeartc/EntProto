@@ -3,7 +3,7 @@
 // Email: c0ffeeartc@gmail.com
 //-------------------------------------------------
 
-namespace Custom.Scripts
+namespace EntProto
 {
 	public interface IAfterCopy
 	{

@@ -8,7 +8,7 @@ using Entitas;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Custom.Scripts
+namespace EntProto
 {
 	[CreateAssetMenu( menuName = "Custom/Comp List", fileName = "CompList" )]
 	public class CompListObj : SerializedScriptableObject

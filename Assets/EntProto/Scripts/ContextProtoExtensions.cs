@@ -6,7 +6,7 @@
 using Entitas;
 using DesperateDevs.Utils;
 
-namespace Custom.Scripts
+namespace EntProto
 {
 	public static class ContextProtoExtensions
 	{

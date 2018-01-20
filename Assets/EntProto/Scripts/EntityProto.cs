@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Entitas;
 using UnityEngine;
 
-namespace Custom.Scripts
+namespace EntProto
 {
 	public abstract partial class EntityProto<TEntity, TContext>
 		where TEntity:Entity
