@@ -29,7 +29,7 @@ If you don't have Odin plugin it's possible to use other plugin that serializes 
 1. Place inherited ProtoHolder script on top of Unity's Edit->ProjectSettings->ScriptExecutionOrder
 1. Call BaseProtoHolder Clone and ApplyTo methods at runtime
 
-These steps can be seen in Example scripts [GameProtoHolder.cs](/Assets/EntProto/Examples/Scripts/GameProtoHolder.cs), [GameController.cs](/Assets/EntProto/Examples/Scripts/GameController.cs)
+Code part of these steps can be seen in example scripts [GameProtoHolder.cs](/Assets/EntProto/Examples/Scripts/GameProtoHolder.cs), [GameController.cs](/Assets/EntProto/Examples/Scripts/GameController.cs)
 
 ### Main concepts (theory)
   - List\<IComponent\> allows creating entity
