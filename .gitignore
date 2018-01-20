@@ -2,7 +2,7 @@
 !/.gitignore
 !/Assets/
 !/ProjectSettings/
-!/Entitas.properties
+!/*.properties
 
 /Assets/Plugins/Sirenix/*
 /Assets/Plugins/Sirenix.meta
