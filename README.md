@@ -38,6 +38,7 @@ Code part of these steps can be seen in example scripts [GameProtoHolder.cs](/As
   - If Remove, Self and Shared fields have duplicates only top ones are processed other are skipped.
 
 ### Reasons to not use prototypes aka blueprints
+  - There is a more robust way to create entities without use of blueprints - using static create methods and configuration files [more info](https://github.com/sschmid/Entitas-CSharp/issues/457#issuecomment-323698587)
   - __Serialization__. Plugins improve Unity's serialization, but even if all works well at current platform, no guarantee for others. It's like drugs, first feels great, then gives problems, later it's painful and hard to get off
   - __Refactoring__. After renaming component class, "blueprints" will lose these comoponents silently
   - __Version Control__. Creating entities through code usually is better version controlled than "blueprint" assets
