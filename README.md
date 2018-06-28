@@ -24,6 +24,8 @@ For testing examples:
 
 If you don't have Odin plugin it's possible to use other plugin that serializes List\<IComponent\> by changing few lines of code. [FullInspector](https://github.com/jacobdufault/fullinspector) has Free license GPLv3 for example.
 
+[OdinSerializer](https://github.com/TeamSirenix/odin-serializer) was open sourced some time ago under Apache 2.0 license.
+
 ### Usage
 1. Inherit EnityProto
 1. Inherit BaseProtoHolder, expose [SerializeField] with your entity prototypes, fill them in editor, pass them into Prototypes in Awake
