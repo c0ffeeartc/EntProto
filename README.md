@@ -41,9 +41,9 @@ Code part of these steps can be seen in example scripts [GameProtoHolder.cs](/As
 
 ### Reasons to not use prototypes aka blueprints
   - There is a more robust way to create entities without use of blueprints - using static create methods and configuration files [more info](https://github.com/sschmid/Entitas-CSharp/issues/457#issuecomment-323698587)
-  - __Serialization__. Plugins improve Unity's serialization, but even if all works well at current platform, no guarantee for others. It's like drugs, first feels great, then gives problems, later it's painful and hard to get off
-  - __Refactoring__. After renaming component class, "blueprints" will lose these comoponents silently
-  - __Version Control__. Creating entities through code usually is better version controlled than "blueprint" assets
+  - __Serialization__. Carefully study Serializer's limitations for platform support etc.
+  - __Refactoring__. After renaming component class, "blueprints" lose these comoponents silently. Serializer may have solution for this, for example OdinSerializer uses `[BindTypeNameToType]` attribute.
+  - __Version Control__. Creating entities through source code usually is more suitable for diff tools. Serializer may have pretty print option to solve this
   - __Cloning__. Unlike simple create functions, this method clones fields, which requires implementing IAfterCopy for any object that is non plain old data
 
 Good usage of blueprints might be experimenting and prototyping with further transition into code.
